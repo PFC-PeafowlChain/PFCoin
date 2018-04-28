@@ -24,7 +24,7 @@ import (
 )
 
 var (
-	MainnetGenesisHash = common.HexToHash("0x1275359ab218f5b00f1ba024f75d0c1d026ddf4450248e850abba9699c6d623e") // Mainnet genesis hash to enforce below configs on
+	MainnetGenesisHash = common.HexToHash("0x9b86999209290e58e166d79cb3910b1b81c080d69788e05452fb51e13ddbe75e") // Mainnet genesis hash to enforce below configs on
 	TestnetGenesisHash = common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d") // Testnet genesis hash to enforce below configs on
 )
 
@@ -36,10 +36,10 @@ var (
 		DAOForkBlock:        nil,
 		DAOForkSupport:      false,
 		EIP150Block:         big.NewInt(0),
-		EIP150Hash:          common.HexToHash("0x1275359ab218f5b00f1ba024f75d0c1d026ddf4450248e850abba9699c6d623e"),
+		EIP150Hash:          common.HexToHash("0x9b86999209290e58e166d79cb3910b1b81c080d69788e05452fb51e13ddbe75e"),
 		EIP155Block:         big.NewInt(10),
 		EIP158Block:         big.NewInt(10),
-		ByzantiumBlock:      nil,
+		ByzantiumBlock:      big.NewInt(10),
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
 	}
