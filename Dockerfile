@@ -18,5 +18,5 @@ RUN addgroup -g 1000 geth && \
 
 USER geth
 
-EXPOSE 8545 8546 30303 30303/udp 30304/udp
+EXPOSE 8545 8546 30333 30333/udp 30304/udp
 ENTRYPOINT ["geth"]
