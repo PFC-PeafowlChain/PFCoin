@@ -30,7 +30,6 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/eth/downloader"
 	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.
@@ -48,7 +47,9 @@ var DefaultConfig = Config{
 	DatabaseCache: 768,
 	TrieCache:     256,
 	TrieTimeout:   5 * time.Minute,
-	GasPrice:      big.NewInt(18 * params.Shannon),
+	//GasPrice:      big.NewInt(18 * params.Shannon),
+	// no gas price
+	GasPrice:      big.NewInt(0),
 
 	TxPool: core.DefaultTxPoolConfig,
 	GPO: gasprice.Config{

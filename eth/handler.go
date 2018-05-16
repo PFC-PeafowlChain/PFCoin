@@ -272,7 +272,7 @@ func (pm *ProtocolManager) handle(p *peer) error {
 	}
 	// Register the peer locally
 	if err := pm.peers.Register(p); err != nil {
-		p.Log().Error("Ethereum peer registration failed", "err", err)
+		p.Log().Error("PFCoin peer registration failed", "err", err)
 		return err
 	}
 	defer pm.removePeer(p.id)
