@@ -24,7 +24,7 @@ import (
 )
 
 var (
-	MainnetGenesisHash = common.HexToHash("0x9b86999209290e58e166d79cb3910b1b81c080d69788e05452fb51e13ddbe75e") // Mainnet genesis hash to enforce below configs on
+	MainnetGenesisHash = common.HexToHash("0xc8361f73e5016dc36a5eb38c7fa2135d152fca0b9f6a5ab58cd379d920661dc4") // Mainnet genesis hash to enforce below configs on
 	TestnetGenesisHash = common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d") // Testnet genesis hash to enforce below configs on
 )
 
@@ -36,7 +36,7 @@ var (
 		DAOForkBlock:        nil,
 		DAOForkSupport:      false,
 		EIP150Block:         big.NewInt(0),
-		EIP150Hash:          common.HexToHash("0x9b86999209290e58e166d79cb3910b1b81c080d69788e05452fb51e13ddbe75e"),
+		EIP150Hash:          common.HexToHash("0xc8361f73e5016dc36a5eb38c7fa2135d152fca0b9f6a5ab58cd379d920661dc4"),
 		EIP155Block:         big.NewInt(10),
 		EIP158Block:         big.NewInt(10),
 		ByzantiumBlock:      big.NewInt(10),
@@ -46,7 +46,7 @@ var (
 
 	// TestnetChainConfig contains the chain parameters to run a node on the Ropsten test network.
 	TestnetChainConfig = &ChainConfig{
-		ChainId:             big.NewInt(3),
+		ChainId:             big.NewInt(18083),
 		HomesteadBlock:      big.NewInt(0),
 		DAOForkBlock:        nil,
 		DAOForkSupport:      true,
@@ -54,7 +54,7 @@ var (
 		EIP150Hash:          common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d"),
 		EIP155Block:         big.NewInt(10),
 		EIP158Block:         big.NewInt(10),
-		ByzantiumBlock:      big.NewInt(1700000),
+		ByzantiumBlock:      big.NewInt(20),
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
 	}
